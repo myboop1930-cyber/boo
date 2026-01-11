@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BooPicks - ビジネス動画＆記事メディア</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex-shrink-0">
+          <a href="#" class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-lg">B</span>
+            </div>
+            <span class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">BooPicks</span>
+          </a>
+        </div>
+        <div class="hidden md:flex md:items-center md:gap-8">
+          <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium">ホーム</a>
+          <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium">動画</a>
+          <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium">記事</a>
+        </div>
+        <div class="hidden md:flex md:items-center md:gap-4">
+          <button class="p-2 text-gray-500 hover:text-gray-700">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </button>
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-700">会員登録</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            ビジネスの最前線を、<br>動画と記事で。
+          </h1>
+          <p class="text-lg sm:text-xl text-white/90 mb-8">
+            BooPicksは、テクノロジー、マネー、キャリアなど<br class="hidden sm:block">
+            ビジネスに役立つ情報を動画と記事で毎日配信するメディアです。
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-medium hover:bg-gray-100">動画を見る</a>
+            <a href="#" class="border border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white/10">記事を読む</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="bg-white border-b">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-wrap justify-center gap-3">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90">ビジネス</button>
+          <button class="bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90">テクノロジー</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90">マネー</button>
+          <button class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90">キャリア</button>
+          <button class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90">ライフスタイル</button>
+          <button class="bg-yellow-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90">教育</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Video -->
+    <section class="py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-2xl font-bold text-gray-900">注目の動画</h2>
+          <a href="#" class="text-indigo-600 font-medium hover:text-indigo-700 flex items-center gap-1">
+            すべて見る
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Featured Video Card -->
+        <a href="#" class="group block">
+          <div class="relative aspect-video overflow-hidden rounded-2xl bg-gray-200">
+            <img src="https://picsum.photos/seed/video1/1280/720" alt="Featured Video" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8 text-indigo-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="absolute top-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-sm font-medium">24:35</div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <span class="inline-block bg-purple-500 text-white rounded-full font-medium text-sm px-3 py-1">テクノロジー</span>
+              <h3 class="text-2xl font-bold text-white mt-3 mb-2">2026年のAI最新トレンド｜ビジネスリーダーが知るべき5つのポイント</h3>
+              <p class="text-gray-200 text-sm mb-3">AIの進化が加速する2026年、ビジネスリーダーが押さえておくべき最新トレンドを解説します。</p>
+              <div class="flex items-center gap-4 text-gray-300 text-sm">
+                <span>田中 太郎</span>
+                <span>1.5万回視聴</span>
+                <span>2026年1月10日</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Video Grid -->
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+          <a href="#" class="group block">
+            <div class="relative aspect-video overflow-hidden rounded-xl mb-3 bg-gray-200">
+              <img src="https://picsum.photos/seed/video2/640/360" alt="Video" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+              <div class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs font-medium">32:10</div>
+            </div>
+            <span class="inline-block bg-green-500 text-white rounded-full font-medium text-xs px-2 py-0.5">マネー</span>
+            <h3 class="font-bold text-gray-900 mt-2 mb-1 group-hover:text-indigo-600">新NISA活用術｜プロが教える資産形成の始め方</h3>
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <span>2.9万回視聴</span>
+              <span>・</span>
+              <span>2026年1月9日</span>
+            </div>
+          </a>
+          <a href="#" class="group block">
+            <div class="relative aspect-video overflow-hidden rounded-xl mb-3 bg-gray-200">
+              <img src="https://picsum.photos/seed/video3/640/360" alt="Video" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+              <div class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs font-medium">18:45</div>
+            </div>
+            <span class="inline-block bg-orange-500 text-white rounded-full font-medium text-xs px-2 py-0.5">キャリア</span>
+            <h3 class="font-bold text-gray-900 mt-2 mb-1 group-hover:text-indigo-600">スタートアップCEOの1日｜成功する起業家の時間管理術</h3>
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <span>1.2万回視聴</span>
+              <span>・</span>
+              <span>2026年1月8日</span>
+            </div>
+          </a>
+          <a href="#" class="group block">
+            <div class="relative aspect-video overflow-hidden rounded-xl mb-3 bg-gray-200">
+              <img src="https://picsum.photos/seed/video4/640/360" alt="Video" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+              <div class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs font-medium">45:20</div>
+            </div>
+            <span class="inline-block bg-blue-500 text-white rounded-full font-medium text-xs px-2 py-0.5">ビジネス</span>
+            <h3 class="font-bold text-gray-900 mt-2 mb-1 group-hover:text-indigo-600">グローバル経済2026｜日本企業が取るべき戦略とは</h3>
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <span>8,920回視聴</span>
+              <span>・</span>
+              <span>2026年1月7日</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-16 bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-2xl font-bold text-gray-900">注目の記事</h2>
+          <a href="#" class="text-indigo-600 font-medium hover:text-indigo-700 flex items-center gap-1">
+            すべて見る
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Featured Article Card -->
+        <a href="#" class="group block">
+          <div class="grid md:grid-cols-2 gap-6 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <div class="relative aspect-video md:aspect-auto bg-gray-200">
+              <img src="https://picsum.photos/seed/article1/640/360" alt="Article" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex flex-col justify-center">
+              <span class="inline-block bg-purple-500 text-white rounded-full font-medium text-sm px-3 py-1 w-fit">テクノロジー</span>
+              <h3 class="text-2xl font-bold text-gray-900 mt-3 mb-3 group-hover:text-indigo-600">ChatGPTを超える？2026年注目のAIスタートアップ10選</h3>
+              <p class="text-gray-600 mb-4">OpenAI一強時代の終焉か。2026年に急成長が期待されるAIスタートアップを徹底分析。</p>
+              <div class="flex items-center gap-4 text-gray-500 text-sm">
+                <span>編集部</span>
+                <span>・</span>
+                <span>2026年1月10日</span>
+                <span>・</span>
+                <span>8分で読める</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article Grid -->
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+          <a href="#" class="group block">
+            <div class="relative aspect-video overflow-hidden rounded-xl mb-3 bg-gray-200">
+              <img src="https://picsum.photos/seed/article2/640/360" alt="Article" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+            </div>
+            <span class="inline-block bg-green-500 text-white rounded-full font-medium text-xs px-2 py-0.5">マネー</span>
+            <h3 class="font-bold text-gray-900 mt-2 mb-1 group-hover:text-indigo-600">円安時代の資産防衛術｜外貨建て投資の始め方</h3>
+            <p class="text-gray-600 text-sm mb-2">円の価値が揺らぐ中、資産を守るための外貨建て投資について解説。</p>
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <span>山本 直樹</span>
+              <span>・</span>
+              <span>6分</span>
+            </div>
+          </a>
+          <a href="#" class="group block">
+            <div class="relative aspect-video overflow-hidden rounded-xl mb-3 bg-gray-200">
+              <img src="https://picsum.photos/seed/article3/640/360" alt="Article" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+            </div>
+            <span class="inline-block bg-orange-500 text-white rounded-full font-medium text-xs px-2 py-0.5">キャリア</span>
+            <h3 class="font-bold text-gray-900 mt-2 mb-1 group-hover:text-indigo-600">転職市場2026｜求められるスキルと成功の秘訣</h3>
+            <p class="text-gray-600 text-sm mb-2">DX人材の需要は依然高く、未経験からのキャリアチェンジも可能。</p>
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <span>田中 誠</span>
+              <span>・</span>
+              <span>5分</span>
+            </div>
+          </a>
+          <a href="#" class="group block">
+            <div class="relative aspect-video overflow-hidden rounded-xl mb-3 bg-gray-200">
+              <img src="https://picsum.photos/seed/article4/640/360" alt="Article" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+            </div>
+            <span class="inline-block bg-blue-500 text-white rounded-full font-medium text-xs px-2 py-0.5">ビジネス</span>
+            <h3 class="font-bold text-gray-900 mt-2 mb-1 group-hover:text-indigo-600">サステナビリティ経営の最前線｜ESG投資の今</h3>
+            <p class="text-gray-600 text-sm mb-2">企業のサステナビリティへの取り組みが投資判断に与える影響とは。</p>
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <span>高橋 真由美</span>
+              <span>・</span>
+              <span>7分</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4">最新情報をお届けします</h2>
+          <p class="text-white/90 mb-8">毎週、厳選されたビジネストピックスと注目コンテンツをメールでお届け。</p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+            <input type="email" placeholder="メールアドレス" class="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500">
+            <button class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100">登録する</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-indigo-600 mb-2">500+</div>
+            <div class="text-gray-600">動画コンテンツ</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-indigo-600 mb-2">1,000+</div>
+            <div class="text-gray-600">記事コンテンツ</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-indigo-600 mb-2">50万+</div>
+            <div class="text-gray-600">月間視聴者</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-indigo-600 mb-2">100+</div>
+            <div class="text-gray-600">専門家パートナー</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        <div class="col-span-2 md:col-span-1">
+          <a href="#" class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-lg">B</span>
+            </div>
+            <span class="text-xl font-bold text-white">BooPicks</span>
+          </a>
+          <p class="text-sm text-gray-400">ビジネスに役立つ動画と記事を毎日配信。あなたのキャリアアップを支援します。</p>
+        </div>
+        <div>
+          <h3 class="text-white font-medium mb-4">コンテンツ</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-white">動画</a></li>
+            <li><a href="#" class="hover:text-white">記事</a></li>
+            <li><a href="#" class="hover:text-white">カテゴリー</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-medium mb-4">サービス</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-white">プレミアム会員</a></li>
+            <li><a href="#" class="hover:text-white">法人プラン</a></li>
+            <li><a href="#" class="hover:text-white">広告掲載</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-medium mb-4">会社情報</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-white">運営会社</a></li>
+            <li><a href="#" class="hover:text-white">お問い合わせ</a></li>
+            <li><a href="#" class="hover:text-white">採用情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-medium mb-4">ポリシー</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-white">利用規約</a></li>
+            <li><a href="#" class="hover:text-white">プライバシーポリシー</a></li>
+            <li><a href="#" class="hover:text-white">特定商取引法</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+        <p>&copy; 2026 BooPicks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
